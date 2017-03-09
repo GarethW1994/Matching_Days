@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mathcing Days</title>
+        <link rel="stylesheet" href="css/style.css" charset="utf-8"/>
+    </head>
+    
+    <body>
+        <div class="header">
+        <h3>MATCHING DAYS</h3>
+        </div>
+        
+        <h4>Days Of The Week</h4>
+        <div class="dayBar">
+            <ul class="listOfDays">
+            <script src="JavaScript/days.js" type="text/x-handlebars-some-template" id="days">
+            {{#each days}}
+                <li><p>{{dayOne}}</p></li>
+                <li><p>{{dayTwo}}</p></li>
+                <li><p>{{dayThree}}</p></li>
+                <li><p>{{dayFour}}</p></li>
+                <li><p>{{dayFive}}</p></li>
+                <li><p>{{daySix}}</p></li>
+                <li><p>{{daySeven}}</p></li>
+            {{/each}}
+            </script>
+            </ul>
+        
+          <div class="inputs">
+              <h5>Enter Dates Below:</h5>
+            <form>
+                <table>
+                <tr>
+                    <th>
+                        <label id ="labelFirst">First Date: </label>
+                    </th>
+                    <td>
+                    <input type="text" size="20" name="firstDate" id="firstDate"/>
+                </tr>
+                
+                 <tr>
+                    <th><label id="labelSecond">Second Date: </label>
+                     </th>
+                <td>
+                        <input type="text" size="20" name="secondDate" id="secondDate"/>
+                    </td>
+                </tr>
+                </table>
+            </form>
+            </div>
+            
+            <div class="key">
+                <!--    <ul>
+                    <li class="circleOne"></li>
+                    <li>First Date</li>
+                    <li class="circleTwo"></li>
+                    <li>Second Date</li>
+                    <li class="circleThree"></li>
+                    <li>Matched Date</li>
+                    </ul> -->        
+            </div>
+        </div>    
+        
+        <script src="scripts/handlebars-v4.0.5.js" charset="utf-8"></script>
+        <script src="JavaScript/days.js" charset="utf-8"></script>
+    </body>
+
+</html>
