@@ -46,9 +46,8 @@ h4 {
 }
 
 .listOfDays {
-    position: absolute;
     padding: 10px;
-    margin-top: -250px;
+    margin-top: -500px;
 }
 
 .listOfDays>li{
@@ -115,6 +114,7 @@ h5 {
 
 
 .key {
+	border: 1px solid #525252;
     width: 500px;
     height: 50px;
     position: absolute;
@@ -125,32 +125,38 @@ h5 {
     justify-content: center;
 }
 
-.key>ul li {
-    display: inline-block;
-    font-family: sans-serif;
-    margin-left: 4px;
+.key>table td {
+	font-size: 14px;
+	font-family: sans-serif;
+	padding-left: 10px;
+	width: 100px;
+	display: inline-block;
 }
 
 .circleOne {
     border-radius: 0.9em;
-    width: 12px;
-    height: 12px;
-    background-color: #76baff; 
+	width: 16px;
+	height: 16px;
+    background-color: #76baff;
+	margin-left: 20px;
 }
 
 .circleTwo {
     border-radius: 0.9em;
-    width: 12px;
-    height: 12px;
-    background-color: #ea6b6b; 
+    width: 16px;
+    height: 16px;
+    background-color: #ea6b6b;
+	margin-left: 40px;
 }
 
 .circleThree {
     border-radius: 0.9em;
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     background-color: #009933;
+	margin-left: 50px;
 }
+
 
 /*------------class being added-------------------*/
 .selectedBlue {
